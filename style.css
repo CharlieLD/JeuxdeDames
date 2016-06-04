@@ -1,0 +1,294 @@
+/* PAGE ACCUEIL */
+
+body {
+	background-color: #288493;
+}
+/* Titre jeux de dames */
+
+h1 {
+	text-align: center;
+	font-size: 100px;
+	font-family: Grand Hotel;
+	color: #E7D64B;
+	margin-top: -150px;	
+}
+
+/* Logo du site */
+
+.logo {
+	margin-left: 35%;
+	height: 300px;
+	width: 400px;
+}
+
+/* Barre de Navigation */
+a {
+	text-decoration: none;
+}
+
+p {
+	color: white;
+}
+
+#sidebar{
+	float:left;
+	width:231px;
+	padding:19px 0 60px;
+}
+
+.side-nav {
+    margin: 0;
+    list-style: none;
+    margin-left: -120px;
+}
+
+/* Style de la Navbar */
+
+.side-nav>li>a{
+	display:block;
+	color:#fff;
+	padding:7px 3px 6px;
+	font:16px/20px Arial, Helvetica, sans-serif;
+}
+
+/* Text decoration avec carré blanc */
+
+.side-nav>li:hover>a,
+.side-nav>li>a:hover{
+	text-decoration:none;
+	background:#34312d;
+	padding:7px 10px 6px 7px;
+}
+
+
+.nav {
+	margin: 0 100px;
+	height: 100px;
+}
+
+/* Fin Barre de navigation */
+
+
+/* Position de la Navbar */
+
+.block2 {
+	float: left;
+}
+
+/* Position du texte principaler */
+
+.block3 {
+	float: right;
+	width: 1000px;
+	margin-right: 20px;
+}
+
+
+/* Début du carousel */
+
+
+.rotate {
+	padding-top: 400px;
+	padding-bottom: 50px;
+}
+
+/* Aspect des images */
+
+.block{
+	margin: 4% auto;
+	width: 210px;
+	height: 140px;
+	position: relative;
+	perspective: 1000px;
+}
+
+#carousel{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 20s infinite linear;
+}
+
+#carousel:hover{
+	animation-play-state: paused;
+}
+
+/* Images descriptif */ 
+
+#carousel figure{
+	display: block;
+	position: absolute;
+	width: 186px;
+	height: 116px;
+	left: 10px;
+	top: 10px;
+	background: black;
+	overflow: hidden;
+	border: solid 5px black;
+}
+
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+img{
+	-webkit-filter: grayscale(1);
+	cursor: pointer;
+	transition: all .5s ease;
+}
+
+/* Grossissement de l'image */
+
+img:hover{
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+
+
+
+/* Fin du carousel */
+
+/* Début du footer */
+
+footer{
+	background: #000;
+	height: 30px;
+	width: 100%;
+	color: #448A22;
+	clear: both;
+	margin-top: 20px;
+	padding-left: 10px;
+	padding: 30px;
+}
+
+.footer {
+	float: right;
+	margin-right: 30px;
+}
+
+.lien_footer {
+	float: left;
+}
+
+/* Fin du footer */
+
+/* FIN PAGE ACCUEIL */
+
+
+/* DEBUT PAGE ACTUALITES */
+
+/*
+This is the Material Design theme for FullCalendar Weekly Agenda view
+Creation Date: Aug 19th 2015
+Author: Jacky Liang
+Version: FullCalendar 2.4.0
+Tested Using the Following FC Settings:
+    editable: false,
+    handleWindowResize: true,
+    weekends: false, // Hide weekends
+    defaultView: 'agendaWeek', // Only show week view
+    header: false, // Hide buttons/titles
+    minTime: '07:30:00', // Start time for the calendar
+    maxTime: '22:00:00', // End time for the calendar
+    columnFormat: {
+        week: 'ddd' // Only show day of the week names
+    },
+    displayEventTime: true,
+    allDayText: 'Online/TBD'
+Note: This has NOT been tested on Monthly or Daily views.
+Colors: Use the following - https://www.google.com/design/spec/style/color.html#color-color-palette
+        at the 700 level. An opacity of 0.65 is automatically applied to the
+        700 level colors to generate a soft and pleasing look.
+        Color were applied to each event using the following code:
+        events.push({
+            title: 'This is a Material Design event!',
+            start: 'someStartDate',
+            end: 'someEndDate',
+            color: '#C2185B'
+        });
+*/
+
+/* Remove that awful yellow color and border from today in Schedule */
+.fc-today {
+  opacity: 0;
+  border: none;
+}
+
+/* Styling for each event from Schedule */
+.fc-time-grid-event.fc-v-event.fc-event {
+  border-radius: 4px;
+  border: none;
+  padding: 5px;
+  opacity: .65;
+  left: 5% !important;
+  right: 5% !important;
+}
+
+/* Bolds the name of the event and inherits the font size */
+.fc-event {
+  font-size: inherit !important;
+  font-weight: bold !important;
+}
+
+/* Remove the header border from Schedule */
+.fc td, .fc th {
+  border-style: none !important;
+  border-width: 1px !important;
+  padding: 0 !important;
+  vertical-align: top !important;
+}
+
+/* Inherits background for each event from Schedule. */
+.fc-event .fc-bg {
+  z-index: 1 !important;
+  background: inherit !important;
+  opacity: .25 !important;
+}
+
+/* Normal font weight for the time in each event */
+.fc-time-grid-event .fc-time {
+  font-weight: normal !important;
+}
+
+/* Apply same opacity to all day events */
+.fc-ltr .fc-h-event.fc-not-end, .fc-rtl .fc-h-event.fc-not-start {
+  opacity: .65 !important;
+  margin-left: 12px !important;
+  padding: 5px! important;
+}
+
+/* Apply same opacity to all day events */
+.fc-day-grid-event.fc-h-event.fc-event.fc-not-start.fc-end {
+  opacity: .65 !important;
+  margin-left: 12px !important;
+  padding: 5px! important;
+}
+
+
+
+/* FIN PAGE ACTUALITES */
+
+
+/* DEBUT PAGE COMMERCANTS */
+
+
+
+
+/* FIN PAGE COMMERCANTS */
+
