@@ -12,106 +12,199 @@
 		<!-- Appel feuille de style -->
 
 		<link rel="stylesheet" href="style.css"/>
-		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 
 </head>
 </body>
 
-	<header>
-		<div class="row">
-			<div class="col-md-12 block1">
-				<img class="logo" src="images/logo.png"/>
-				<h1>Jeux de Dames</h1>
+	
+	<!-- Navbar -->
+
+
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Jeux de Dames</a>
 			</div>
-		</div>
-
-
-
-	</header>
-
-
-	<!-- Navbar -->	
-<div class="container">
-	<div class="row">
-		<div class="col-md-4 block2">
-			<div id="main">
-				<div id="sidebar">
-					<ul class="side-nav">
-						 <li class="nav"><a href="actualités.html">Actualités</a></li>
-						 <li class="nav"><a href="Artistes.html">Artistes</a></li>
-						 <li class="nav"><a href="Commerçants.html">Commerçants</a></li>
-	 					 <li class="nav"><a href="Commerçants.html">Partenaires</a></li>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="Artistes.html">Artistes</a></li>
+						<li><a href="Commerçants.html">Commerçants</a></li>
+						<li><a href="partenaires.html">Partenaires</a></li>
 					</ul>
-				</div>			
-			</div>
+			</div><!--/.nav-collapse -->
 		</div>
 	</div>
+
    <!-- Fin Navbar -->
 
-   
+	<!-- ********** HEADER ********** -->
+	<section id="home"></section>
+	<div id="h">
+	    <div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1>Découvrez tout nos artistes</h1>
+					<button class="btn btn-conf btn-green">Learn More</button>
+					<button class="btn btn-conf btn-clear">Buy Theme</button>
+				</div>
+			</div>
+	    </div><!-- /.container -->
+	</div><!--/H -->
 
-   
-   <!-- Texte de présentation -->
+	<!-- ********** GREEN - SECTION ********** -->
+	<div id="g">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<i class="ion-ios-paper-outline"></i>
+					<h4>Présentation</h4>
+					<p>« Les Jeux de Dames » est une association bellifontaine créée en janvier 2015, pour animer Fontainebleau lors de la Journée internationale de la Femme, avec les femmes artistes et artisans créatrices de Seine et Marne et le soutien des commerçants. Ensemble, Artistes et Commerçants imaginent une nouvelle « mise en scène ».
+					Les œuvres d’art exposées dans les vitrines vont créer un lien, une communication… le début d’une histoire entre le commerçant, l’artiste, et le passant.</p>
+				</div>
+				<div class="col-md-4">
+					<i class="ion-ios-monitor-outline"></i>
+					<h4>du concept</h4>
+					<p>
+					Avec ce projet, Jeux de Dames propose l’Art à disposition de chacun, au regard de tous, dans la rue, ainsi que quelques expositions ou animations artistiques différentes à découvrir lors de cette manifestation. Plus d’une centaine d’artistes femmes exposent à Fontainebleau.Des hôtels, Le Victoria, l’hôtel de Londres, le Napoléon ou la Demeure du Parc vous invitent à visiter des expositions d’artistes choisies tout le long de la semaine. Un marché des Artisans-créatrices sur la place Napoléon et à L’aigle Noir.</p>
+				</div>
+				<div class="col-md-4">
+					<i class="ion-ios-gear-outline"></i>
+					<h4>Jeux de Dames</h4>
+					<p>
+					Ce salon propose des animations des étudiants de BTS (Assistant Manager) du Lycée Uruguay France et de l’IUT de Fontainebleau « Unité Commerciale ». Un concert est proposé par l’association « Le Jardin Musical » à 18h au 11 place d’Armes à Fontainebleau.
+					Le site Web a été créé et mis en ligne par les élèves de Terminale STMG (SIG) du Lycée Uruguay France..</p>
+				</div>
+			</div><!--/row -->
+		</div><!--/container -->
+	</div><!--/G -->
+	
+	<!-- ********** SIDE IMAGE - SECTION ********** -->
+	<section id="about"></section>
+	<section class="side-image text-heavy clearfix">
+		<div class="image-container col-md-5 col-sm-3 pull-left">
+			<div class="background-image-holder">
+				<div class="container">
+					<div class="css-carousel">
+						<img class="css-img" src="images/logo.png">
+						<img class="css-img" src="images/AgnesBleicher.jpeg">
+						<img class="css-img" src="images/AlexandraKraif.png">
+						<img class="css-img" src="images/AlyaFobis.jpeg">
+					</div>
+				</div>
+			</div><!--/background-img-holder-->
+		</div><!--/img-container-->
+				
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4 content clearfix">
+					<h1>JEUX DE DAMES</h1>
+					<p class="lead">Découvrez les photos des artistes</p>
+					<a href="" class="btn btn-conf btn-green">Cliquez pour continuer</a><br>
+					<div class="col-sm-6 no-pad-left feature">
+						<h5>JEUX DE DAMES</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+					</div>
+					<div class="col-sm-6 no-pad-left feature">
+						<h5>JEUX DE DAMES</h5>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+					</div>
+				</div><!--col-md-6 col-sm-8 -->
+			</div><!-- /row -->
+		</div><!--/container -->
+	</section><!--Side Image Section -->
+	
+	
+	<!-- ********** WHITE SECTION - IMAGE  ********** -->
+	<div class="container">
+		<div class="row mtb">
+			<div class="col-md-5">
+				<h1 class="mb">Notre équipes</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+				<p class="mt"><button class="btn btn-conf btn-green">Voir membres</button></p>
+			</div>
+			
+			<div class="col-md-7">
+				<img class="img-responsive aligncenter" src="" width="320">
+			</div>
+		</div><!--/row -->
+	</div><!--/container-->
 
-   <div class="row">
-		<div class="col-md-8 block3">
-			<p>
-				« Les Jeux de Dames » est une association bellifontaine créée en janvier 2015, pour animer Fontainebleau lors de la Journée internationale de la Femme, avec les femmes artistes et artisans créatrices de Seine et Marne et le soutien des commerçants. Ensemble, Artistes et Commerçants imaginent une nouvelle « mise en scène ». </br>
-</br>
-Les œuvres d’art exposées dans les vitrines vont créer un lien, une communication… le début d’une histoire entre le commerçant, l’artiste, et le passant.
-Avec ce projet, Jeux de Dames propose l’Art à disposition de chacun, au regard de tous, dans la rue, ainsi que quelques expositions ou animations artistiques différentes à découvrir lors de cette manifestation. Plus d’une centaine d’artistes femmes exposent à Fontainebleau.</br>
-</br>
-Des hôtels, Le Victoria, l’hôtel de Londres, le Napoléon ou la Demeure du Parc vous invitent à visiter des expositions d’artistes choisies tout le long de la semaine. Un marché des Artisans-créatrices sur la place Napoléon et à L’aigle Noir.</br>
-</br>
-Ce salon propose des animations des étudiants de BTS (Assistant Manager) du Lycée Uruguay France et de l’IUT de Fontainebleau « Unité Commerciale ». Un concert est proposé par l’association « Le Jardin Musical » à 18h au 11 place d’Armes à Fontainebleau.</br>
-</br>
-Le site Web a été créé et mis en ligne par les élèves de Terminale STMG (SIG) du Lycée Uruguay France.</p>
-			</p>
+	<!-- ********** GREY SECTION -  ********** -->	
+	<div id="grey">
+		<div class="container">
+			<div class="row w">
+				<div class="col-md-4">
+					<img src="http://www.landingsumo.com/demos/Theme%2016/assets/img/blog01.jpg" class="img-responsive aligncenter" alt="">
+					<div class="date">
+						<h4><bold>13</bold></h4>
+						<h4>june</h4>
+					</div>
+					<h5>Activités</h5>
+					<p class="desc">Posted by Sophie in <b>site</b></p>
+					<p> Lorem Ipsum has been the industry's standard dummy text ever.</p>
+					<p><a href="#">Continue Reading...</a></p>
+				</div><!--/col-md-4-->
+				<div class="col-md-4">
+					<img src="http://www.landingsumo.com/demos/Theme%2016/assets/img/blog02.jpg" class="img-responsive aligncenter" alt="">
+					<div class="date">
+						<h4><bold>28</bold></h4>
+						<h4>Jul</h4>
+					</div>
+					<h5>Activités</h5>
+					<p class="desc">Posted by Sophie in <b>site</b></p>
+					<p> Lorem Ipsum has been the industry's standard dummy text ever.</p>
+					<p><a href="#">Continue Reading...</a></p>
+				</div><!--/col-md-4-->
+				<div class="col-md-4">
+					<img src="http://www.landingsumo.com/demos/Theme%2016/assets/img/blog03.jpg" class="img-responsive aligncenter" alt="">
+					<div class="date">
+						<h4><bold>13</bold></h4>
+						<h4>Aug</h4>
+					</div>
+					<h5>Activités</h5>
+					<p class="desc">Posted by Sophie in <b>site</b></p>
+					<p> Lorem Ipsum has been the industry's standard dummy text ever.</p>
+					<p><a href="#">Continue Reading...</a></p>
+				</div><!--/col-md-4-->
+			</div><!--/row -->
 		</div>
-	</div>
-</div>
-	<!-- FIn du texte de présentation -->
-
-
-	<!-- Début du caroussel -->
-<div class="row">
-	<div class="col-md-12 rotate">
-	  	<div class="block">
-			<div id="carousel">
-				<figure><img src="images/AgnesBleicher.jpeg" alt=""></figure>
-				<figure><img src="images/AlexandraKraif.png" alt=""></figure>
-				<figure><img src="images/AlyaFobis.jpeg" alt=""></figure>
-				<figure><img src="images/AnneBiro.jpeg" alt=""></figure>
-				<figure><img src="images/AnneBour.jpeg" alt=""></figure>
-				<figure><img src="images/AnneIsabelleRoubai.jpeg" alt=""></figure>
-				<figure><img src="images/AnneServanton-Loeb.png" alt=""></figure>
-				<figure><img src="images/AnneSophiePerrin.jpeg" alt=""></figure>
-				<figure><img src="images/AuroreFouillou.jpeg" alt=""></figure>
+	</div><!--/GREY -->
+	
+	<!-- ********** WHITE SECTION -  ********** -->
+	<section id="contact"></section>
+	<div class="container">
+		<div class="row mtb2">
+			<div class="col-md-8 col-md-offset-2 centered">
+				<h6>Vous pouvez nous retrouver</h6>
+				<h2 class="bold mb">Sur nos différents<br/>réseaux sociaux</h2>
+				<button class="btn btn-conf btn-green">Cliquez ici</button>
+			</div>
+		</div><!--/row -->
+	</div><!--/container -->
+	
+	<!-- ********** FOOTER ********** -->
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 centered">
+					<h5>Jeux de Dames</h5>
+					<p class="mt">
+						<a href="#"><i class="ion-social-twitter"></i></a>
+						<a href="#"><i class="ion-social-instagram"></i></a>
+						<a href="#"><i class="ion-social-dribbble"></i></a>
+					</p>
+				</div>
 			</div>
 		</div>
-	</div> 
-</div>  
-
-
-
-	<!-- Fin du caroussel -->
-
-
-	<!-- Début du footer -->
-
-	<footer>
-		<ul class="lien_footer">
-			 <li><a href="charte.html">Chartes</a></li>
-			 <li><a href="contact.html">Contact</a></li>
-		</ul>
-		<p class="footer">Jeux de Dames | <strong><span class="diff">Mentions légales</span></strong></p>
-	</footer>
-
-
-
-
-	<!-- Fin du footer -->
-
+	</div><!--/F -->
 
 	<!-- Script pour le menu déroulant -->
 
