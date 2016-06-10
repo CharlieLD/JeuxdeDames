@@ -1,5 +1,13 @@
 /* PAGE ACCUEIL */
+body {
 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+}
 
 img{
 	-webkit-filter: grayscale(1);
@@ -23,13 +31,12 @@ img:hover{
 	}
 }
 html {
+	height: 100%;
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-body {
-  margin: 0;
-}
+
 article,
 aside,
 details,
@@ -205,7 +212,7 @@ td,
 th {
   padding: 0;
 }
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/main.css */
+
 @media print {
   *,
   *:before,
@@ -1092,18 +1099,7 @@ th {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-html {
-  font-size: 10px;
 
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
-}
 input,
 button,
 select,
@@ -6505,11 +6501,6 @@ p {
 	line-height: 28px;
 	color: #666; 
 	margin-top: 10px; 
-}
-
-html,
-body {
-	height: 100%;
 }
 
 .alignleft { float: left; }
